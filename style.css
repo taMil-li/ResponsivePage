@@ -27,9 +27,8 @@ body {
 }
 
 .img {
-
-    width: 40vw;
-    object-fit: contain;
+    width: ;
+    40vw object-fit: contain;
 }
 
 .sec-2 {
@@ -65,13 +64,13 @@ body {
     align-items: center;
 }
 
-@media(max-width:900px) {
+@media(max-width:768px) {
     .sec-1 {
         justify-content: space-around;
     }
 }
 
-@media(min-width:900px) {
+@media(min-width:768px) {
     .sec-1 {
         justify-content: flex-start;
     }
@@ -88,5 +87,9 @@ body {
 
     .degrees {
         flex-direction: row;
+    }
+
+    .img {
+        width: 250px;
     }
 }
