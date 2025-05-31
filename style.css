@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Roboto";
+}
+
+.bg-container {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    color: #fff;
+    background-image: linear-gradient(to bottom, #b96fa1, #5a3f8c);
+}
+
+.sec-1 {
+    display: flex;
+}
+
+.climate-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+
+    width: 40vw;
+    object-fit: contain;
+}
+
+.sec-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: #ffffff20;
+    padding: 15px;
+    border-radius: 10px;
+    ;
+}
+
+.sky-img {
+    height: 50px;
+    align-self: center;
+}
+
+.day {
+    align-self: center;
+}
+
+.tomorrow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.degrees {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+@media(max-width:900px) {
+    .sec-1 {
+        justify-content: space-around;
+    }
+}
+
+@media(min-width:900px) {
+    .sec-1 {
+        justify-content: flex-start;
+    }
+
+    .sec-2 {
+        flex-direction: row;
+        background: none;
+        justify-content: space-around;
+    }
+
+    .tomorrow {
+        flex-direction: column;
+    }
+
+    .degrees {
+        flex-direction: row;
+    }
+}
